@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont 图标</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont icon-blue-at"></i>
+                    <div class="name">blue-at</div>
+                    <div class="fontclass">.icon-blue-at</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-delete"></i>
+                    <div class="name">blue-delete</div>
+                    <div class="fontclass">.icon-blue-delete</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-collect"></i>
+                    <div class="name">blue-collect</div>
+                    <div class="fontclass">.icon-blue-collect</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-forward"></i>
+                    <div class="name">blue-forward</div>
+                    <div class="fontclass">.icon-blue-forward</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-like"></i>
+                    <div class="name">blue-like</div>
+                    <div class="fontclass">.icon-blue-like</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-home"></i>
+                    <div class="name">blue-home</div>
+                    <div class="fontclass">.icon-blue-home</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-message"></i>
+                    <div class="name">blue-message</div>
+                    <div class="fontclass">.icon-blue-message</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-person"></i>
+                    <div class="name">blue-person</div>
+                    <div class="fontclass">.icon-blue-person</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-share"></i>
+                    <div class="name">blue-share</div>
+                    <div class="fontclass">.icon-blue-share</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-time"></i>
+                    <div class="name">blue-time</div>
+                    <div class="fontclass">.icon-blue-time</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-view"></i>
+                    <div class="name">blue-view</div>
+                    <div class="fontclass">.icon-blue-view</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-headset"></i>
+                    <div class="name">blue-headset</div>
+                    <div class="fontclass">.icon-blue-headset</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-aircraft"></i>
+                    <div class="name">blue-aircraft</div>
+                    <div class="fontclass">.icon-blue-aircraft</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-right"></i>
+                    <div class="name">blue-right</div>
+                    <div class="fontclass">.icon-blue-right</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-setting"></i>
+                    <div class="name">blue-setting</div>
+                    <div class="fontclass">.icon-blue-setting</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-thumb"></i>
+                    <div class="name">blue-thumb</div>
+                    <div class="fontclass">.icon-blue-thumb</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-edit"></i>
+                    <div class="name">blue-edit</div>
+                    <div class="fontclass">.icon-blue-edit</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-add"></i>
+                    <div class="name">blue-add</div>
+                    <div class="fontclass">.icon-blue-add</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-remove"></i>
+                    <div class="name">blue-remove</div>
+                    <div class="fontclass">.icon-blue-remove</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-blue-Search"></i>
+                    <div class="name">blue-Search</div>
+                    <div class="fontclass">.icon-blue-Search</div>
+                </li>
+            
+        </ul>
+
+        <h2 id="font-class-">font-class引用</h2>
+        <hr>
+
+        <p>font-class是unicode使用方式的一种变种，主要是解决unicode书写不直观，语意不明确的问题。</p>
+        <p>与unicode使用方式相比，具有如下特点：</p>
+        <ul>
+        <li>兼容性良好，支持ie8+，及所有现代浏览器。</li>
+        <li>相比于unicode语意明确，书写更直观。可以很容易分辨这个icon是什么。</li>
+        <li>因为使用class来定义图标，所以当要替换图标时，只需要修改class里面的unicode引用。</li>
+        <li>不过因为本质上还是使用的字体，所以多色图标还是不支持的。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的fontclass代码：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+        <p>"iconfont"是你项目下的font-family。可以通过编辑项目查看，默认是"iconfont"。</p>
+        </blockquote>
+    </div>
+</body>
+</html>
